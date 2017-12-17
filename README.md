@@ -39,6 +39,11 @@ The loss per epoch has averaged around 0.2 and 0.15 for the first 10 epochs and 
 
 The batch size probably could be increased to optimize memory usage, however it did not make much difference once trained on AWS. Also it appears to me that there is not much difference in training after epoch 30-35. Probably it could be tuned down a little bit to avoid additional computation.
 
+The program can be executed using:
+```
+python main.py
+```
+
 ##### Results
 Some of the sample images have been provided below:
 ![](./samples/sample1.png)
@@ -61,23 +66,6 @@ Some of the sample images have been provided below:
 
 ![](./samples/sample10.png)
 
-##### Run
-Two different copies of the main file have been created to executed projects on GPU or CPU
-```
-python main.py
-```
 
-
-**Note** If running this in Jupyter Notebook system messages, such as those regarding test status, may appear in the terminal rather than the notebook.
-
-### Submission
-1. Ensure you've passed all the unit tests.
-2. Ensure you pass all points on [the rubric](https://review.udacity.com/#!/rubrics/989/view).
-3. Submit the following in a zip file.
- - `helper.py`
- - `main.py`
- - `project_tests.py`
- - Newest inference images from `runs` folder  (**all images from the most recent run**)
-
- ## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+##### Conclusion
+The solution has produced has been satisfactory but not perfect is some scenarios. Few images show only specks of road. There is scope for improvement using image augmentation techniques or changing brightness, contrast and flipping to fine tune the algorithm.
